@@ -3,3 +3,6 @@
 **/Dockerfile
 .git
 .github
+.env*
+.dockerenv*
+tmp/
