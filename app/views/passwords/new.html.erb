@@ -2,6 +2,7 @@
 
 <div class='container'
     data-controller="knobs pwgen passwords form"
+    data-knobs-tab-name-value="password"
     data-knobs-lang-day-value="<%= _('Day') %>"
     data-knobs-lang-days-value="<%= _('Days') %>"
     data-knobs-default-days-value="<%= Settings.pw.expire_after_days_default %>"
@@ -151,6 +152,15 @@
                 <p class='fst-italic fw-light'><%= _('Use the button above to generate a random password.') %></p>
             </div>
             <% if user_signed_in? %>
+                <div class='row mb-3'>
+                    <div class="input-group">
+                        <span class="input-group-text"><%= Password.human_attribute_name(:name) %></span>
+                        <%= f.text_field(:name, { class: "form-control",
+                                                placeholder: _('Optional'),
+                                                autocomplete: "off" }) %>
+                    </div>
+                    <div class="form-text" id="basic-addon4"><%= _('A name shown in the dashboard, notifications and emails.') %></div>
+                </div>
                 <div class='row mb-3'>
                     <div class="input-group">
                         <span class="input-group-text"><%= _('Reference Note') %></span>
