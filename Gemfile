@@ -77,7 +77,7 @@ gem "cssbundling-rails", "~> 1.4"
 gem "terser", "~> 1.2"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "bootstrap"
-gem "json", "~> 2.11" # Legacy carry-over
+gem "json", "~> 2.12" # Legacy carry-over
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
@@ -126,11 +126,11 @@ end
 gem "rollbar"
 gem "version", git: "https://github.com/pglombardo/version.git", branch: "master"
 gem "administrate", "~> 0.20.1"
-gem "rqrcode", "~> 2.2"
+gem "rqrcode", "~> 3.1"
 gem "turnout2024", require: "turnout"
 
 gem "solid_queue", "~> 1.1"
 
-gem "mission_control-jobs", "~> 0.5.0"
+gem "mission_control-jobs", "~> 1.0.2"
 
 gem "overmind", "~> 2.5", group: :development
